@@ -20,5 +20,15 @@ class DatabaseSeeder extends Seeder
             'email' => 'teste@teste.com.br',
             'password' => bcrypt( 'Senh@123' )
         ]);
+
+        \App\Models\Status::create([
+            'status' => 'em andamento'
+        ]);
+        \App\Models\Status::create([
+            'status' => 'concluída'
+        ]);
+        \App\Models\Status::create([
+            'status' => 'cancelada'
+        ]);
     }
 }
